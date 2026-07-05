@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Heaven</title>
+  <!--font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!--custom css file link-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Header section-->
+  <header class="header">
+    <div class="header-1">
+      <a href="#" class="logo"><i class="fas fa-book"></i> BookHeaven</a>
+
+      <form action="#" class="search-form">
+        <input type="search" name="search" placeholder="Search books..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="icon">
+        <div id="search-btn" class="fas fa-search" role="button" aria-label="Open search"></div>
+        <a href="#" class="fas fa-heart" aria-label="Wishlist"></a>
+        <a href="#" class="fas fa-shopping-cart" aria-label="Shopping cart"></a>
+        <div id="login-btn" class="fas fa-user" role="button" aria-label="Open login form"></div>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#arrivals">Arrivals</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+    </div>
+  </header>
+  <!--Header section ends-->
+
+  <!--Bottom navbar-->
+  <nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home" aria-label="Home"></a>
+    <a href="#featured" class="fas fa-list" aria-label="Featured books"></a>
+    <a href="#arrivals" class="fas fa-tags" aria-label="New arrivals"></a>
+    <a href="#reviews" class="fas fa-comments" aria-label="Reviews"></a>
+    <a href="#blogs" class="fas fa-blog" aria-label="Blog posts"></a>
+  </nav>
+
+  <!-- Home section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <span>new arrivals</span>
+        <h1>Find your next favorite book.</h1>
+        <p>Browse curated bestsellers, inspiring classics, and fresh new releases from our book collection.</p>
+        <a href="#featured" class="btn">Shop now</a>
+      </div>
+      <div class="image">
+        <img src="images/banner.jpeg" alt="Book Heaven banner">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured section -->
+  <section class="featured section" id="featured">
+    <div class="heading">
+      <span>featured</span>
+      <h1>Best Selling Books</h1>
+    </div>
+
+    <div class="book-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/img1.jpg" alt="The Midnight Library">
+        </div>
+        <div class="content">
+          <h3>The Midnight Library</h3>
+          <p>Discover the power of choices and second chances in this bestselling novel.</p>
+          <div class="price">Rs.399</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/img2.jpg" alt="Atomic Habits">
+        </div>
+        <div class="content">
+          <h3>Atomic Habits</h3>
+          <p>Build better routines one small habit at a time with this practical guide.</p>
+          <div class="price">Rs.499</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/img3.jpg" alt="The Alchemist">
+        </div>
+        <div class="content">
+          <h3>The Alchemist</h3>
+          <p>A timeless story about following your dreams and finding your destiny.</p>
+          <div class="price">Rs.499</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arrivals section -->
+  <section class="arrivals section" id="arrivals">
+    <div class="heading">
+      <span>new arrival</span>
+      <h1>Latest Releases</h1>
+    </div>
+
+    <div class="arrival-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/img4.jpg" alt="Book cover">
+        </div>
+        <div class="content">
+          <h3>Journey to the Stars</h3>
+          <p>Explore a thrilling sci-fi adventure perfect for curious readers.</p>
+          <div class="price">Rs.599</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/img5.jpg" alt="Book cover">
+        </div>
+        <div class="content">
+          <h3>Creative Minds</h3>
+          <p>A beautiful collection of stories that celebrate imagination and possibility.</p>
+          <div class="price">Rs.599</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/img6.jpg" alt="Book cover">
+        </div>
+        <div class="content">
+          <h3>Healthy Habits</h3>
+          <p>Learn practical wellness tips for everyday life and thoughtful living.</p>
+          <div class="price">Rs.599</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews section -->
+  <section class="reviews section" id="reviews">
+    <div class="heading">
+      <span>customer reviews</span>
+      <h1>What readers say</h1>
+    </div>
+
+    <div class="review-container">
+      <div class="box">
+        <p>"The book selection is amazing and the checkout experience was smooth. I’ll definitely shop again!"</p>
+        <div class="user">
+          <img src="images/pic1.jpeg" alt="User review">
+          <div>
+            <h3>Priya Sharma</h3>
+            <span>Book Lover</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>"Fast delivery and beautiful packaging. The site makes it easy to discover new titles."</p>
+        <div class="user">
+          <img src="images/pic2.jpeg" alt="User review">
+          <div>
+            <h3>Anjali Mehta</h3>
+            <span>Reader</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>"I found the perfect gift in minutes. Love the curated categories and the friendly layout."</p>
+        <div class="user">
+          <img src="images/pic3.jpeg" alt="User review">
+          <div>
+            <h3>Rohan Singh</h3>
+            <span>Frequent Buyer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog section -->
+  <section class="blogs section" id="blogs">
+    <div class="heading">
+      <span>blog posts</span>
+      <h1>Reading inspiration</h1>
+    </div>
+
+    <div class="blog-container">
+      <div class="box">
+        <div class="image">
+          <img src="images/blog1.jpeg" alt="Blog post">
+        </div>
+        <div class="content">
+          <h3>How to build a daily reading habit</h3>
+          <p>Practical tips for making reading part of your everyday routine.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/blog2.jpeg" alt="Blog post">
+        </div>
+        <div class="content">
+          <h3>Top 10 books for personal growth</h3>
+          <p>Discover influential books that help you grow and stay motivated.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="images/blog3.jpeg" alt="Blog post">
+        </div>
+        <div class="content">
+          <h3>Why every reader needs a cozy nook</h3>
+          <p>Create a calm reading space that invites you to relax with a book.</p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login form -->
+  <div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="#">
+      <h2>Sign In</h2>
+      <span>Username</span>
+      <input type="email" name="email" placeholder="Enter your email" class="box">
+      <span>Password</span>
+      <input type="password" name="password" placeholder="Enter your password" class="box">
+
+      <div class="checkbox">
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+
+      <input type="submit" value="Sign in" class="btn">
+      <p>Forgot Password? <a href="#">Click here</a></p>
+      <p>Don't have an account? <a href="#">Create one</a></p>
+    </form>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+
+</html>

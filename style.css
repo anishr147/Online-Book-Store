@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
+
+:root {
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #222;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.12);
+  --box-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.12);
+  --container-padding: 9%;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 1rem;
+}
+
+body {
+  background: #f7f7f7;
+  color: var(--black);
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.6rem;
+  border-radius: .8rem;
+  color: #fff;
+  background: var(--green);
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: var(--dark-color);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header .header-1 {
+  background: #fff;
+  padding: 1.8rem var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header .header-1 .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.header .header-1 .logo i {
+  color: var(--green);
+}
+
+.header .header-1 .search-form {
+  width: 50rem;
+  min-width: 25rem;
+  height: 5rem;
+  border: var(--border);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 5rem;
+}
+
+.header .header-1 .search-form input {
+  font-size: 1.6rem;
+  padding: 0 1.5rem;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label {
+  font-size: 2.2rem;
+  padding-right: 1.8rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover {
+  color: var(--green);
+}
+
+.header .header-1 .icon div,
+.header .header-1 .icon a {
+  font-size: 2.4rem;
+  margin-left: 1.4rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .icon div:hover,
+.header .header-1 .icon a:hover {
+  color: var(--green);
+}
+
+#search-btn {
+  display: none;
+}
+
+.header .header-2 {
+  background: var(--green);
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header .header-2 .navbar {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header .header-2 .navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+.header .header-2 .navbar a:hover {
+  background: var(--dark-color);
+}
+
+.home {
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+}
+
+.home-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 0 var(--container-padding);
+}
+
+.home-content .text {
+  max-width: 55rem;
+}
+
+.home-content span {
+  display: inline-block;
+  color: var(--green);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 1.4rem 0;
+}
+
+.home-content p {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: var(--light-color);
+}
+
+.home-content .image img {
+  width: 100%;
+  max-width: 55rem;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.section {
+  padding: 6rem var(--container-padding);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heading span {
+  color: var(--green);
+  font-size: 1.7rem;
+  letter-spacing: .4rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.book-container,
+.arrival-container,
+.review-container,
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.box {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 38rem;
+}
+
+.box .image {
+  width: 100%;
+  height: 26rem;
+  overflow: hidden;
+  border-radius: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.box .content p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 1.8;
+}
+
+.box .price {
+  font-size: 2rem;
+  color: var(--dark-color);
+  font-weight: 700;
+  margin: 1.6rem 0;
+}
+
+.review-container .box {
+  min-height: 28rem;
+  padding: 2.5rem;
+}
+
+.review-container .box p {
+  font-size: 1.7rem;
+  line-height: 2.1;
+  margin-bottom: 2rem;
+}
+
+.review-container .user {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.review-container .user img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.4rem solid var(--green);
+}
+
+.review-container .user h3 {
+  font-size: 1.9rem;
+}
+
+.review-container .user span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.blog-container .box {
+  min-height: 34rem;
+}
+
+.blog-container .content a {
+  display: inline-block;
+}
+
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  right: -110%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  transition: right 0.3s ease;
+}
+
+.login-form-container.active {
+  right: 0;
+}
+
+.login-form-container form {
+  background: #fff;
+  border: var(--border);
+  width: 42rem;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+.login-form-container form h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+.login-form-container form span {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.login-form-container form .box {
+  margin: .9rem 0;
+  font-size: 1.6rem;
+  border: var(--border);
+  border-radius: 1rem;
+  padding: 1.2rem 1.4rem;
+  color: var(--black);
+  text-transform: none;
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.login-form-container form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: 1.2rem 0;
+}
+
+.login-form-container form .checkbox label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.login-form-container form .btn {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+
+.login-form-container form p {
+  padding-top: .8rem;
+  color: var(--light-color);
+  font-size: 1.4rem;
+}
+
+.login-form-container form p a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-btn {
+  position: absolute;
+  top: 1.8rem;
+  right: 2.5rem;
+  font-size: 4.5rem;
+  color: var(--green);
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header .header-1 {
+    padding: 1.8rem 4rem;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content .image,
+  .home-content .text {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 4.2rem;
+  }
+
+  .book-container,
+  .arrival-container,
+  .review-container,
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 0;
+  }
+
+  .header .header-2 {
+    display: none;
+  }
+
+  .bottom-navbar {
+    display: block;
+  }
+
+  #search-btn {
+    display: inline-block;
+  }
+
+  .header .header-1 {
+    box-shadow: var(--box-shadow);
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .header .header-1 .search-form {
+    position: absolute;
+    top: -120%;
+    right: 2rem;
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+  }
+
+  .header .header-1 .search-form.active {
+    top: 105%;
+  }
+
+  .section {
+    padding: 5rem 4rem;
+  }
+
+  .book-container,
+  .arrival-container,
+  .review-container,
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header .header-1 {
+    padding: 1.5rem 2rem;
+  }
+
+  .header .header-1 .icon div,
+  .header .header-1 .icon a {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .home-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
